@@ -4,10 +4,26 @@
     box-sizing: border-box;
 }body{
     font-family: 'Open Sans', sans-serif;
+    color: #414141;
 }ul,li{
     list-style: none;
 }a{
     text-decoration: none;
+    color: #414141;
+}p{
+    font-size: 19px;
+    line-height: 28px;
+}h2{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Playfair Display';
+}h4{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 11px;
+}span{
+    font-size: 19px;
 }
 
 /* header */
@@ -15,7 +31,7 @@
 header{
     width: 100%;
     padding: 24px 0;
-    position: absolute;
+    position: fixed;
     background: rgba(247, 247, 244, 0.9);
 }
 
@@ -28,18 +44,16 @@ header{
 }
 
 .topbar{
+    width: 454px;
     display: flex;
+    justify-content: space-between;
     margin-left: -265px;
 }
 
-.topbar li:nth-child(1n+2){
-    margin-left: 40px;
-}
 
 .topbar a{
     font-size: 14px;
     letter-spacing: 0.5px;
-    color: #414141;
 }
 
 .bns{
@@ -50,13 +64,12 @@ header{
     font-weight: 700;
     font-size: 14px;
     border-radius: 10px;
-    padding: 16px 24px;
 }
 
 .btn{
-    color: #414141;
-    background: #F7F7F4;
+    background: white;
     border: 1px solid #6AA089;
+    padding: 16px 24px;
 }
 
 .sign-up{
@@ -64,6 +77,7 @@ header{
     background: #6AA089;
     border: 1px solid #F7F7F4;
     margin-left: 28px;
+    padding: 16px 25px 16px 26px;
 }
 
 /* main */
@@ -81,6 +95,295 @@ header{
 .main_content h1{
     width: 616px;
     font-family: 'Playfair Display';
+    font-weight: 400;
     font-size: 44px;
-    color: #414141;
+}
+
+.main_content p{
+    width: 420px;
+    margin: 72px 0 25px 0;
+}
+
+.main_content .btns{
+    margin-top: 100px;
+}
+
+.main_content .btns .sign-up{
+    margin-left: 0;
+    border: none;
+}
+
+.main_content .btns .btn{
+    margin-left: 28px;
+}
+
+.main .sign-up{
+    font-weight: 400;
+}
+
+.main .btn, .main .sign-up{
+    padding: 21px 54px;
+}
+
+/* team */
+
+.team{
+    width: 1443px;
+    padding: 55px 0 172px 0;
+    margin: 100px auto;
+    background: url('images/team.jpg') no-repeat;
+}
+
+.team_content{
+    width: 693px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team_content h2{
+    margin-bottom: 30px;
+}
+
+/* about */
+
+.about{
+    width: 634px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 142px;
+}
+
+.about span{
+    color: #69A08A;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Playfair Display';
+}
+
+.about p{
+    margin-top: 30px;
+}
+
+/* collaboration */
+
+.collab{
+    width: 1427px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background: url('images/collab.jpg') no-repeat left top;
+}
+
+.collab_title{
+    width: 536px;
+    margin-left: 650px;
+    margin-bottom: 300px;
+}
+
+.collab_title h2, .manage_title h2, .motivation_title h2{
+    font-size: 44px;
+}
+
+.collab_title p, .manage_title p, .motivation_title p{
+    line-height: 32px;
+    margin: 40px 0 47px 0;
+}
+
+.collab_title .btn, .manage_title .btn, .motivation_title .btn{
+    padding: 23px 53px;
+}
+
+.collab_cards{
+    width: 836px;
+    height: 253px;
+}
+
+.collab_cards, .manage_cards, .motivation_cards{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards{
+    text-align: center;
+    width: 222px;
+}
+
+.cards p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cards.one, .cards.three{
+    margin-top: auto;
+}
+
+.cards.two{
+    margin-bottom: auto;
+}
+
+.collab_cards .one h4{
+    margin-top: 25px;
+}
+
+.collab_cards .two h4{
+    margin-top: 23px;
+}
+
+.collab_cards .three h4{
+    margin-top: 17px;
+}
+
+/* manage */
+
+.manage{
+    width: 1420px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background: url('images/manage.jpg') no-repeat right top;
+}
+
+.manage_title{
+    width: 424px;
+    margin-left: 94px;
+    margin-bottom: 268px;
+}
+
+.manage_cards{
+    width: 869px;
+    height: 262px;
+}
+
+.manage_cards .three{
+    margin-top: auto;
+}
+
+.manage_cards .one h4{
+    margin-top: 30px;
+}
+
+.manage_cards .two h4, .manage_cards .three h4{
+    margin-top: 20px;
+}
+
+/* motivation */
+
+.motivation{
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background: url('images/motivation.jpg') no-repeat left top;
+}
+
+.motivation_title{
+    width: 686px;
+    margin-left: 651px;
+    margin-bottom: 300px;
+}
+
+.motivation_cards{
+    width: 858px;
+    height: 237px;
+}
+
+.motivation_cards .two{
+    margin-top: 10px;
+}
+
+.motivation_cards .one h4{
+    margin-top: 34px;
+}
+
+.motivation_cards .two h4, .motivation_cards .three h4{
+    margin-top: 20px;
+}
+
+/* combination */
+
+.combination{
+    background: url('images/combination.jpg') no-repeat right center;
+    width: 1564px;
+    margin: 0 auto;
+    margin-bottom: 145px;
+}
+
+.combination_content{
+    width: 675px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.combination_content h2{
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.combination_content p{
+    width: 565px;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 27px;
+    font-size: 20px;
+}
+
+/* offer */
+
+.offer{
+    width: 633px;
+    height: 245px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    text-align: center;
+    background: url('images/offer.jpg') no-repeat center 96px;
+}
+
+.offer h2{
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 68px;
+}
+
+.offer .sign-up{
+    font-weight: 400;
+    padding: 20px 50px;
+    border: none;
+    margin-left: 0;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: #F7F7F4;
+    padding: 35px 0 40px 0;
+}
+
+.footer_content{
+    width: 1232px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_text p{
+    width: 546px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 32px 0 40px 0;
+}
+
+.footer_links{
+    width: 449px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_links a{
+    font-size: 14px;
+}
+
+.footer_networks{
+    margin-top: auto;
+    width: 122px;
+    display: flex;
+    justify-content: space-between;
 }
