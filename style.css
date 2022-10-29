@@ -54,6 +54,11 @@ header{
 .topbar a{
     font-size: 14px;
     letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+li a:hover{
+    color: black;
 }
 
 .bns{
@@ -70,6 +75,16 @@ header{
     background: white;
     border: 1px solid #6AA089;
     padding: 16px 24px;
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    background-color: #6AA089;
+    color: white;
+}
+
+.btn:active{
+    background-color: #4b8a6f;
 }
 
 .sign-up{
@@ -78,6 +93,13 @@ header{
     border: 1px solid #F7F7F4;
     margin-left: 28px;
     padding: 16px 25px 16px 26px;
+    transition: all 0.4s;
+}
+
+.sign-up:hover{
+    border: 1px solid #6AA089;
+    background: white;
+    color: black;
 }
 
 /* main */
@@ -110,7 +132,10 @@ header{
 
 .main_content .btns .sign-up{
     margin-left: 0;
-    border: none;
+}
+
+.main_content .btns .sign-up:hover{
+    border: 1px solid #6AA089;
 }
 
 .main_content .btns .btn{
@@ -345,8 +370,11 @@ header{
 .offer .sign-up{
     font-weight: 400;
     padding: 20px 50px;
-    border: none;
     margin-left: 0;
+}
+
+.offer .sign-up:hover{
+    border: 1px solid #6AA089;
 }
 
 /* footer */
@@ -386,4 +414,12 @@ footer{
     width: 122px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer_networks a{
+    transition: transform 0.4s;
+}
+
+.footer_networks a:hover{
+    transform: scale(1.05);
 }
